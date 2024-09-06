@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.features.register.configureRegisterRouting
 import com.example.plugins.*
 import io.ktor.server.application.*
 import io.ktor.server.cio.*
@@ -13,4 +14,6 @@ fun main() {
 fun Application.module() {
     configureSerialization()
     configureRouting()
+    configureLoginRouting()
+    configureRegisterRouting()
 }
